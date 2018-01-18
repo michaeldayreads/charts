@@ -9,5 +9,5 @@ Please check the [F5 k8s-bigip-ctlr](https://github.com/F5Networks/k8s-bigip-ctl
 If you are aiming to contribute or make a suggestion on the WIP items included here, feel free to:
 
 ```
-helm repo add https://michaeldayreads.github.io/charts/
+helm repo add mdr-dev https://michaeldayreads.github.io/charts/
 ```
