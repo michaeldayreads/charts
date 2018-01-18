@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## Charts
 
-You can use the [editor on GitHub](https://github.com/michaeldayreads/charts/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repo is for experimenting with using github pages as a [helm chart repository](https://docs.helm.sh/developing_charts/#the-chart-repository-guide)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Charts in this repository are pre-beta. Charts will be intended for use of the [F5 k8s-bigip-ctlr](https://github.com/F5Networks/k8s-bigip-ctlr) in an [OpenStack](https://www.openstack.org/community/) environment. 
 
-### Markdown
+Please check the [F5 k8s-bigip-ctlr](https://github.com/F5Networks/k8s-bigip-ctlr) repo, [F5 Networks](https://github.com/F5Networks) and [F5 devcentral](https://github.com/f5devcentral) github organizations for any end-user intended charts or other content.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+If you are aiming to contribute or make a suggestion on the WIP items included here, feel free to:
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/michaeldayreads/charts/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+helm repo add https://michaeldayreads.github.io/charts/
+```
