@@ -1,0 +1,1 @@
+You should have a deploy, rs, 2 po and a svc configured for NodePort, ready to be used in a config map.
