@@ -9,5 +9,6 @@ Please check the [F5 k8s-bigip-ctlr](https://github.com/F5Networks/k8s-bigip-ctl
 If you are aiming to contribute or make a suggestion on the WIP items included here, feel free to:
 
 ```
-helm repo add mdr-dev https://recursivelycurious.github.io/charts/
+helm repo add rc-stable https://recursivelycurious.github.io/charts/stable
+helm repo add rc-incubator https://recursivelycurious.github.io/charts/incubator
 ```
