@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A Helm chart for Kubernetes
+name: f5-bigip-ctlr-ingress
+version: 0.1.0

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: helm-bigip-ctlr-sa
+  namespace: kube-system
+secrets:
+- name: helm-bigip-login

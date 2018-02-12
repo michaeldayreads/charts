@@ -1,0 +1,36 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: helm-bigip-ctlr-d
+  namespace: kube-system
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: helm-k8s-bigip-ctlr
+      labels:
+        app: helm-k8s-bigip-ctlr
+    spec:
+      containers:
+      - args:
+        - --log-level
+        - DEBUG
+        - --bigip-partition
+        - md
+        - --bigip-url
+        - 172.16.2.27
+        - --bigip-username
+        - admin
+        - --bigip-password
+        - admin
+        - --verify-interval
+        - "2"
+        - --node-poll-interval
+        - "1"
+        command:
+        - /app/bin/k8s-bigip-ctlr
+        image: f5networksdevel/k8s-bigip-ctlr:devel-master
+        imagePullPolicy: Always
+        name: helm-bigip-controller-1
+      serviceAccountName: helm-bigip-ctlr-sa
+      serviceAccount: helm-bigip-ctlr-sa
