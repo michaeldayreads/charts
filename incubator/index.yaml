@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  demo-web-app:
+  - apiVersion: v1
+    appVersion: 0.0.1
+    created: 2018-02-12T04:46:06.762056129Z
+    description: A simple demo web app for use in networking examples.
+    digest: 8a342e5dfbee16395c716de6bb9f70cfd04d078e4755b2ebcfb2da00b97a869a
+    name: demo-web-app
+    urls:
+    - https://recursivelycurious.github.io/charts/incubator/demo-web-app-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v1
+    appVersion: 0.0.1
+    created: 2018-02-12T04:46:06.761874058Z
+    description: A simple demo web app for use in networking examples.
+    digest: 78dbfa9921bb2e2d99f88828a679f8e88c1c7515496c97453342dca3b1a9df98
+    name: demo-web-app
+    urls:
+    - https://recursivelycurious.github.io/charts/incubator/demo-web-app-0.0.1.tgz
+    version: 0.0.1
+generated: 2018-02-12T04:46:06.761579135Z
