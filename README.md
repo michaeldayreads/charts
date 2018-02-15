@@ -19,5 +19,5 @@ This repo contains packaged and versioned charts and their source.
 
 Charts in `/stable` have been tested and documented, charts in `/incubator` may not yet be fully tested and documented. 
 
-Source for charts can be found in `source/stable` and `source/incubator` respectively.
+Source for charts can be found in `src/stable` and `src/incubator` respectively.
 

@@ -1,0 +1,4 @@
+{{ .Chart.Name }} installed.
+
+The release name is {{ .Release.Name }}.
+
