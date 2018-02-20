@@ -8,11 +8,11 @@ env:
 install:
   - curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh
   - chmod 700 get_helm.sh
-  - ./get_helm.sh --version v2.7.2
+  - ./get_helm.sh --version $HELM_VERSION
 
 before_script:
   - ls
   - helm init --client-only
   
 script:
-  - ./build-tools/helm_lint.sh
+  - ./tools/helm_lint.sh
