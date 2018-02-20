@@ -3,29 +3,29 @@ entries:
   demo-web-app:
   - apiVersion: v1
     appVersion: 0.0.1
-    created: 2018-02-12T16:55:52.989695298Z
+    created: 2018-02-20T18:25:31.883299452Z
     description: A simple demo web app for use in networking examples.
     digest: 8a342e5dfbee16395c716de6bb9f70cfd04d078e4755b2ebcfb2da00b97a869a
     name: demo-web-app
     urls:
-    - https://recursivelycurious.github.io/charts/incubator/demo-web-app-0.0.2.tgz
+    - https://recursivelycurious.github.io/charts-testing/incubator/demo-web-app-0.0.2.tgz
     version: 0.0.2
   - apiVersion: v1
     appVersion: 0.0.1
-    created: 2018-02-12T16:55:52.989505869Z
+    created: 2018-02-20T18:25:31.883127433Z
     description: A simple demo web app for use in networking examples.
     digest: 78dbfa9921bb2e2d99f88828a679f8e88c1c7515496c97453342dca3b1a9df98
     name: demo-web-app
     urls:
-    - https://recursivelycurious.github.io/charts/incubator/demo-web-app-0.0.1.tgz
+    - https://recursivelycurious.github.io/charts-testing/incubator/demo-web-app-0.0.1.tgz
     version: 0.0.1
   f5-bigip-ctlr:
   - apiVersion: v1
-    created: 2018-02-12T16:55:52.989927919Z
+    created: 2018-02-20T18:25:31.8834873Z
     description: Deploy the F5 Networks k8s-bigip-ctlr
     digest: 2af856b19e489e49f8b9c84a75531e6d29e00f6056749d8972ae942b25d8cb98
     name: f5-bigip-ctlr
     urls:
-    - https://recursivelycurious.github.io/charts/incubator/f5-bigip-ctlr-0.0.1.tgz
+    - https://recursivelycurious.github.io/charts-testing/incubator/f5-bigip-ctlr-0.0.1.tgz
     version: 0.0.1
-generated: 2018-02-12T16:55:52.989183617Z
+generated: 2018-02-20T18:25:31.882744573Z
