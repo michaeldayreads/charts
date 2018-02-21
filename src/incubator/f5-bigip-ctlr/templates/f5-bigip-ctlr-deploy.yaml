@@ -16,6 +16,7 @@ spec:
         app: {{ template "f5-bigip-ctlr.name" . }}
         release: {{ .Release.Name }}
     spec:
+      serviceAccountName: {{ .Values.serviceaccount }}
       containers:
       - args:
         - --log-level
