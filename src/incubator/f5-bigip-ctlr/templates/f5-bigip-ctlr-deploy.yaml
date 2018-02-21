@@ -29,9 +29,9 @@ spec:
         - --bigip-password
         - {{ .Values.args.bigip_password }}
         - --verify-interval
-        - {{ .Values.args.verify_interval }}
+        - {{ .Values.args.verify_interval | quote }}
         - --node-poll-interval
-        - {{ .Values.args.node_poll_interval }}
+        - {{ .Values.args.node_poll_interval | quote }}
         command:
         - /app/bin/k8s-bigip-ctlr
         image: "{{ .Values.image.user }}/{{ .Values.image.repo }}:{{ .Values.image.tag }}"
