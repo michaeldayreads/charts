@@ -11,7 +11,7 @@ image:
 args:
   log_level: DEBUG
   partition: f5-bigip-ctlr
-  bigip_url: 172.16.2.35
+  bigip_url: 172.16.2.38
   verify_interval: 2
   node_poll_interval: 1
   bigip_password: admin
