@@ -18,7 +18,12 @@ spec:
     spec:
       serviceAccountName: {{ .Values.serviceaccount }}
       containers:
-      - args:
+      - name: {{ template "f5-bigip-ctlr.name" . }}
+        image: "{{ .Values.image.user }}/{{ .Values.image.repo }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        command:
+        - /app/bin/k8s-bigip-ctlr
+        args:
         - --log-level
         - {{ .Values.args.log_level }}
         - --bigip-partition
@@ -33,8 +38,3 @@ spec:
         - {{ .Values.args.verify_interval | quote }}
         - --node-poll-interval
         - {{ .Values.args.node_poll_interval | quote }}
-        command:
-        - /app/bin/k8s-bigip-ctlr
-        image: "{{ .Values.image.user }}/{{ .Values.image.repo }}:{{ .Values.image.tag }}"
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
-        name: {{ template "f5-bigip-ctlr.name" . }}
