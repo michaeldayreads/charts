@@ -20,6 +20,17 @@ spec:
       containers:
       - name: {{ template "f5-bigip-ctlr.name" . }}
         image: "{{ .Values.image.user }}/{{ .Values.image.repo }}:{{ .Values.image.tag }}"
+        env:
+          - name: BIGIP_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.bigip_login_secret }}
+                key: username
+          - name: BIGIP_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.bigip_login_secret }}
+                key: password
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         command:
         - /app/bin/k8s-bigip-ctlr
@@ -31,9 +42,9 @@ spec:
         - --bigip-url
         - {{ .Values.args.bigip_url }}
         - --bigip-username
-        - {{ .Values.args.bigip_username }}
+        - $(BIGIP_USERNAME)
         - --bigip-password
-        - {{ .Values.args.bigip_password }}
+        - $(BIGIP_PASSWORD)
         - --verify-interval
         - {{ .Values.args.verify_interval | quote }}
         - --node-poll-interval

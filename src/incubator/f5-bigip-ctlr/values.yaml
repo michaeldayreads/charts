@@ -14,8 +14,7 @@ args:
   bigip_url: 172.16.2.37
   verify_interval: 2
   node_poll_interval: 1
-  bigip_password: admin
-  bigip_username: admin
+bigip_login_secret: f5-bigip-ctlr-login
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
